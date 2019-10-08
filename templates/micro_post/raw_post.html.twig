@@ -1,0 +1,17 @@
+<div class="media text-muted pt-3">
+    <img data-src="holder.js/32x32?text=MJ&bg=e83e8c&fg=fff&size=8" alt="" class="mr-2 rounded">
+    <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+            <span class="d-block">
+                <strong class="text-gray-dark">
+                    <a href="{{ path('micro_post_post', { 'id': post.id}) }}" class="text-decoration-none">@username</a>
+                </strong>
+                <small>· {{ post.time|date("Y/m/d") }}</small></span>
+        {{ post.text }}
+    </p>
+    <p>
+        <small class="d-block text-right mt-3">
+            <a href="{{ path('micro_post_edit', {'id': post.id}) }}" class="btn btn-outline-primary btn-sm">Edit</a>
+            <a href="{{ path('micro_post_delete', {'id': post.id}) }}" class="btn btn-danger btn-sm">Delete</a>
+        </small>
+    </p>
+</div>
