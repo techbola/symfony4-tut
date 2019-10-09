@@ -41,9 +41,9 @@ class AppFixtures extends Fixture
 
     private function loadUsers(ObjectManager $manager){
         $user = new User();
-        $user->setUsername('john_doe');
-        $user->setFullName('John Doe');
-        $user->setEmail('john_doe@test.com');
+        $user->setUsername('techbola');
+        $user->setFullName('TechBola');
+        $user->setEmail('techbola@test.com');
         $user->setPassword(
             $this->passwordEncoder->encodePassword(
                 $user,
